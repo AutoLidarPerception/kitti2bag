@@ -27,7 +27,7 @@ Thanks to the work of @jnitsch, _kitti2bag_ can now export velodyne laser data a
 
 It is very easy! Just run
 ```bash
-pip install kitti2bag
+sudo -H pip2 install kitti2bag
 ```
 
 ## How to run it?
@@ -89,6 +89,31 @@ topics:      /kitti/camera_color_left/camera_info    77 msgs    : sensor_msgs/Ca
 That's it. You have file `kitti_2011_09_26_drive_0002_sync.bag` that contains your data.
 
 Other source files can be found at [KITTI raw data](http://www.cvlibs.net/datasets/kitti/raw_data.php) page.
+
+### KiTTi Raw Data File Lists
+
+```yaml
+.
+├── 2011_09_26
+│   ├── 2011_09_26_drive_0002_sync
+    │   │── image_00
+    │   │   ├── data
+    │   │── image_01
+    │   │   ├── data
+    │   │── image_02
+    │   │   ├── data
+    │   │── image_03
+    │   │   ├── data
+    │   │── oxts
+    │   │   ├── data
+    │   │── velodyne_points
+    │   │   ├── data
+    │   │── tracklet_labels.xml
+│   ├── calib_cam_to_cam.txt
+│   ├── calib_imu_to_velo.txt
+│   ├── calib_velo_to_cam.txt
+├── kitti_2011_09_26_drive_0002_synced.bag
+```
 
 ## Bug reporting, support and feature requests.
 
