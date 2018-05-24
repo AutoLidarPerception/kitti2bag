@@ -1,5 +1,4 @@
 # kitti2bag
-
 [![Build Status](https://travis-ci.org/tomas789/kitti2bag.svg?branch=master)](https://travis-ci.org/tomas789/kitti2bag)
 
 Convert [KITTI](http://www.cvlibs.net/datasets/kitti/index.php) dataset to ROS bag file the easy way!
@@ -7,7 +6,6 @@ Convert [KITTI](http://www.cvlibs.net/datasets/kitti/index.php) dataset to ROS b
 ![KITTI playback preview](https://tomas789.github.io/kitti2bag/img/kitti_playback.png)
 
 ## TODOs
-
 Help me make this feature rich and complete. Just fork this repo, implement new features (very easy in this case) and make [pull request](https://github.com/tomas789/kitti2bag/pulls).
 
 Feature request list:
@@ -20,18 +18,15 @@ Feature request list:
  * export only subset of sensors
 
 ## Contributions
-
 Thanks to the work of @jnitsch, _kitti2bag_ can now export velodyne laser data and dynamic _tf_ transformations. Thanks to @emreay-, this tool can now convert odometry datasets too. Thank you both!
 
 ## How to install it?
-
 It is very easy! Just run
 ```bash
 sudo -H pip2 install kitti2bag
 ```
 
 ## How to run it?
-
 One example is better then thousand words so here it is
 
 ```bash
@@ -85,13 +80,11 @@ topics:      /kitti/camera_color_left/camera_info    77 msgs    : sensor_msgs/Ca
              /tf_static                              77 msgs    : tf2_msgs/TFMessage
 ```
 
-
 That's it. You have file `kitti_2011_09_26_drive_0002_sync.bag` that contains your data.
 
 Other source files can be found at [KITTI raw data](http://www.cvlibs.net/datasets/kitti/raw_data.php) page.
 
 ### KiTTi Raw Data File Lists
-
 ```yaml
 .
 ├── 2011_09_26
@@ -116,10 +109,10 @@ Other source files can be found at [KITTI raw data](http://www.cvlibs.net/datase
 ```
 
 ## Bug reporting, support and feature requests.
+I appreciate [pull requests](https://github.com/Durant35/kitti2bag/pulls) with bug fixes and new features.
 
-I appreciate [pull requests](https://github.com/tomas789/kitti2bag/pulls) with bug fixes and new features. You you want to help with something please use [GitHub issue tracker](https://github.com/tomas789/kitti2bag/issues).
+If you want to help with something please use [GitHub issue tracker](https://github.com/Durant35/kitti2bag/issues).
 
 ## Related works
-
  * [pykitti](https://github.com/utiasSTARS/pykitti) is very simple library for dealing with KITTI dataset in python. 
  * [kitti_player](https://github.com/tomas789/kitti_player) allows to play dataset directly. No bag file needed. I found difficult to get it work. Some bug fixed can be found in [my fork of kitti_player](https://github.com/tomas789/kitti_player) but still not good enough.
